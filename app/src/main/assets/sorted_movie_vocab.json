@@ -1,0 +1,118 @@
+[
+  {
+    "title": "Brown Rice",
+    "id": 1,
+    "genres": [
+      "Adventure",
+      "Animation"
+    ],
+    "count": 3428
+  },
+  {
+    "title": "Umu Cold Soup",
+    "id": 87,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "count": 2991
+  },
+  {
+    "title": "Raw Beef Stew",
+    "id": 1196,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Sci-Fi",
+      "War"
+    ],
+    "count": 2990
+  },
+  {
+    "title": "Rice Roll",
+    "id": 18,
+    "genres": [
+      "Rich_vitamin",
+      "Rich_fibre",
+      "Main_dish",
+      "Rice",
+      "Vegetables"
+    ],
+    "count": 3365
+  },
+  {
+    "title": "Spicy Sausage Stew",
+    "id": 467,
+    "genres": [
+      "Rich_vitamin",
+      "Rich_fibre",
+      "Soup",
+      "Pork",
+      "Vegetables"
+    ],
+    "count": 4124
+  },
+  {
+    "title": "Plum Tea",
+    "id": 243,
+    "genres": [
+      "Rich_vitamin",
+      "Beverage",
+      "Vegan",
+      "Fruits"
+    ],
+    "count": 2953
+  },
+  {
+    "title": "Oyster Tofu Stew",
+    "id": 88,
+    "genres": [
+      "Rich_vitamin",
+      "High_protein",
+      "Rich_fibre",
+      "Soup",
+      "Grains",
+      "Fish"
+    ],
+    "count": 1705
+  },
+  {
+    "title": "Mung Bean Samgyetang",
+    "id": 736,
+    "genres": [
+      "Rich_vitamin",
+      "High_protein",
+      "Main_dish",
+      "Others",
+      "Grains",
+    ],
+    "count": 1480
+  },
+  {
+    "title": "Chungmu Gimbap",
+    "id": 598,
+    "genres": [
+      "Rich_vitamin",
+      "Rich_fibre",
+      "Main_dish",
+      "Rice",
+      "Vegetables",
+    ],
+    "count": 4126
+  },
+  {
+    "title": "Cold Soybean Paste Soup",
+    "id": 610,
+    "genres": [
+      "High_protein",
+      "Rich_fibre",
+      "Soup",
+      "Vegan",
+      "Grains",
+    ],
+    "count": 3305
+  }
+]
