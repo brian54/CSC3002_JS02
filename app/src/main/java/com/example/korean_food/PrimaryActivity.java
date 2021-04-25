@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/** A primary activity which acts as a gateway to each different activity */
 public class PrimaryActivity extends AppCompatActivity {
     private List<String> items = Arrays.asList("Bibimbap", "Kimchi");
 
@@ -35,17 +36,25 @@ public class PrimaryActivity extends AppCompatActivity {
     private ImageButton ib_beverage;
     private ImageButton ib_vegan;
     private ImageButton ib_settings;
-    private BottomNavigationView bottomNavigationView; //Bottom Navigation View
-    private FragmentManager fm;
-    private FragmentTransaction ft;
+    private ImageButton ib_ingredients;
+    private ImageButton ib_health;
 
-
+    /** A search menu to be able to search any recipe in the app */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_primary);
 
+        ImageButton nameButton = (ImageButton) findViewById(R.id.searchButton);
+        nameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        /** Image buttons which transfer to each functions */
         tv_primary_name = findViewById(R.id.tv_primary_name);
 
         Intent intent = getIntent();
@@ -134,7 +143,23 @@ public class PrimaryActivity extends AppCompatActivity {
             }
         });
 
+        ib_ingredients = findViewById(R.id.ib_ingredients);
+        ib_ingredients.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_settings = new Intent(PrimaryActivity.this, SecondaryActivity_ingredients.class);
+                startActivity(intent_settings); // Transition from PrimaryActivity to SecondaryActivity_ingredients
+            }
+        });
 
+        ib_health = findViewById(R.id.ib_health);
+        ib_health.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_settings = new Intent(PrimaryActivity.this, SecondaryActivity_health.class);
+                startActivity(intent_settings); // Transition from PrimaryActivity to SecondaryActivity_health
+            }
+        });
     }
 
 

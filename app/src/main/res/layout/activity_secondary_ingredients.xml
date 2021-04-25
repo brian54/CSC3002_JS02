@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".PrimaryActivity">
+
+    <TextView
+        android:id="@+id/select_health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select preferred main ingredient"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondary_health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tl_primary_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/primary_outsidetable"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:stretchColumns="*"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ib_ingredients_rice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/rice" />
+
+                <ImageButton
+                    android:id="@+id/ib_ingredients_grains"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/grains" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ib_ingredients_beef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/beef" />
+
+                <ImageButton
+                    android:id="@+id/ib_ingredients_pork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/pork" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ib_ingredients_fish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/fish" />
+
+                <ImageButton
+                    android:id="@+id/ib_ingredients_vegetables"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/vegetables" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ib_ingredients_fruits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/fruits" />
+
+                <ImageButton
+                    android:id="@+id/ib_ingredients_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/otheringredients" />
+
+            </TableRow>
+
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

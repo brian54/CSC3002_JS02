@@ -1,0 +1,20 @@
+apply plugin: 'de.undercouch.download'
+
+task downloadLiteModel {
+    def downloadFiles = [
+        // Models support multiple features.
+        'https://docs.google.com/uc?export=download&id=1muH4Flbulc-hIMtE9SfoJwHQW6jxYaR9': 'model.tflite',
+        'https://docs.google.com/uc?export=download&id=1SoWPU4E5xESJmclmwQLliB9ql6wNIaXJ': 'config.json',
+        // Vocab files.
+        'https://docs.google.com/uc?export=download&id=16g1nS8FYbuJZAoY1_8PpcTRZ3eC1X3T0': 'sorted_movie_vocab.json',
+        'https://docs.google.com/uc?export=download&id=11uZ1-dX_1diYATVSbHuqTIcuSe77J_7w': 'movie_genre_vocab.txt',
+
+    ]
+    downloadFiles.each { key, value ->
+      download {
+          src key
+          dest "$projectDir/src/main/assets/" + value
+          overwrite true
+      }
+    }
+}

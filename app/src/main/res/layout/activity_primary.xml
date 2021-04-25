@@ -23,11 +23,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <SearchView
-            android:id="@+id/primary_search"
+        <ImageButton
+            android:id="@+id/searchButton"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_search_24" />
 
         <TextView
             android:id="@+id/tv_primary_name"
@@ -43,7 +44,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/primary_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TableLayout
             android:id="@+id/tl_primary_cat"
@@ -51,8 +52,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/primary_outsidetable"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
             android:stretchColumns="*"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -65,17 +68,17 @@
 
                 <ImageButton
                     android:id="@+id/ib_basedish"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="50sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="50px"
                     android:background="@drawable/primary_insidetable"
-                    android:src="@drawable/bibimbap" />
+                    android:src="@drawable/bibimbap2" />
 
                 <ImageButton
                     android:id="@+id/ib_maindish"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="50sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="50px"
                     android:background="@drawable/primary_insidetable"
                     android:src="@drawable/bossam" />
 
@@ -89,7 +92,7 @@
                     android:id="@+id/ib_sidedish"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="50sp"
+                    android:layout_marginBottom="50px"
                     android:background="@drawable/primary_insidetable"
                     android:src="@drawable/kimchipancake" />
 
@@ -97,7 +100,7 @@
                     android:id="@+id/ib_soup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="50sp"
+                    android:layout_marginBottom="50px"
                     android:background="@drawable/primary_insidetable"
                     android:src="@drawable/royalhotpot" />
 
@@ -111,7 +114,7 @@
                     android:id="@+id/ib_snack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="50sp"
+                    android:layout_marginBottom="50px"
                     android:background="@drawable/primary_insidetable"
                     android:src="@drawable/ricecake" />
 
@@ -119,7 +122,7 @@
                     android:id="@+id/ib_beverage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="50sp"
+                    android:layout_marginBottom="50px"
                     android:background="@drawable/primary_insidetable"
                     android:src="@drawable/shikhye" />
 
@@ -133,6 +136,7 @@
                     android:id="@+id/ib_vegan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
                     android:background="@drawable/primary_insidetable"
                     android:src="@drawable/acornjellysalad" />
 
@@ -140,8 +144,29 @@
                     android:id="@+id/ib_settings"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
                     android:background="@drawable/primary_insidetable"
                     android:src="@drawable/settings" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ib_ingredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/ingredients" />
+
+                <ImageButton
+                    android:id="@+id/ib_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/healthydietary" />
 
             </TableRow>
 

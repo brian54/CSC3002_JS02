@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".PrimaryActivity">
+
+    <TextView
+        android:id="@+id/select_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select health related preference"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondary_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tl_primary_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/primary_outsidetable"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:stretchColumns="*"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ib_weightloss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/weightloss" />
+
+                <ImageButton
+                    android:id="@+id/ib_highprotien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/highprotein" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ib_lowsugerandsalt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/lowsugarandsalt" />
+
+                <ImageButton
+                    android:id="@+id/ib_richvitamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/richvitamin" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ib_richfibre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/richfibre" />
+
+                <ImageButton
+                    android:id="@+id/ib_EPADHA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px"
+                    android:background="@drawable/primary_insidetable"
+                    android:src="@drawable/epadha" />
+
+            </TableRow>
+
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

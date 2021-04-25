@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/** The main activity where the first interaction starts */
 public class MainActivity extends AppCompatActivity {
 
     private Button btn_toprimary;
@@ -19,8 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /** An option for the user to input their name*/
         et_name = findViewById(R.id.et_name);
 
+        /** Transition from the main menu to primary menu */
         btn_toprimary = findViewById(R.id.btn_toprimary);
         btn_toprimary.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 str_name = et_name.getText().toString();
                 Intent intent_main = new Intent(MainActivity.this , PrimaryActivity.class);
                 intent_main.putExtra("str_name", str_name);
-                startActivity(intent_main); // Transition from the main menu to primary menu
+                startActivity(intent_main);
             }
         });
 
